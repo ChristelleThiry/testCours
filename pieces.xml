@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<liste name="piece">
+	<ligne> 
+		<value>1</value>
+		<label>PCMI1</label>
+	</ligne>
+	<ligne>
+		<value>4</value>
+		<label>PCMI4</label>
+	</ligne>
+	<ligne>
+		<value>12</value>
+		<label>PCMI12</label>
+	</ligne>
+</liste>

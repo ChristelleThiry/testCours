@@ -1,0 +1,176 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 févr. 2014, 10:46:34
+    Author     : chris
+*/
+
+@charset "UTF-8";
+
+/**
+ *    Ideal resolution: 1280 * 960 pixels
+ */
+
+@media  screen and (max-width: 2000px) {
+    html, body {
+        height : 100%;
+        background-color : #FFFFFF;
+        border : 0px solid transparent;
+        font-size : 1em; /* Ideal: 16px */
+        margin : 0px 0px 0px 0px;
+        min-height : 100%;
+        padding : 0px 0px 0px 0px;
+        width : 100%;
+    }
+
+    img, object, embed, canvas, video, audio, picture {
+        max-width : 100%;
+        height : auto;
+    }
+
+    .layout-main {
+        height : 100%;
+        margin : 0px auto 0px auto;
+        min-height : 100%;
+        width : 80%; /* Ideal: 1024px -> 1024 / 1280 */
+    }
+
+    .en-tete {
+        height : 20%;
+        color : #000000;
+        background-color : #F9F7ED;
+        padding-top: 2%;
+    }
+
+    .en-tete h1 {
+        text-align: center;
+    }
+
+    .layout-menu, .layout-content {
+        display : inline-block;
+        height : 100%;
+        min-height : 100%;
+        vertical-align : top;
+    }
+
+    .layout-menu {
+        color : #000000;
+        background-color: #BED6E3;
+        width : 20.8984375%; /* Ideal: 214px -> 214 / 1024 */
+    }
+
+    .main {
+        height : 100%;
+        min-height : 100%;
+    }
+
+    .layout-content {
+        color : #000000;
+        background-color : #FFFFFF;
+        width : 58.203125%; /* Ideal: 596px -> 596 / 1024 */
+    }
+
+    .menu, .content {
+        padding : 5px 5px 5px 5px;
+    }
+
+    .menu h1 {
+        font-size : 1.5em; /* Ideal: 24px */
+    }
+
+    .menu li {
+        list-style : none;
+    }
+
+    .menu li a {
+        color : #000000;
+    }
+
+    .menu li a:before {
+        content : "> ";
+    }
+
+    .menu li a:hover {
+        color : #000000;
+    }
+
+    .content  .content-item {
+        border-top : 1px solid #36393D;
+        clear : both;
+        margin : 0px auto 0px auto;
+        padding : 15px 0px 15px 0px;
+        text-align : center;
+        width : 90.939597315436241610738255033557%; /* Ideal: 542px -> 542 / 596 */
+    }
+
+    .content  .content-item:first-child {
+        border : 0px solid transparent;
+    }
+
+    .content  .content-item h1 {
+        font-size : 1.5em; /* Ideal: 24px */
+    }
+
+    .content  .content-item p.description {
+        font-size : 0.750em; /* Ideal: 12px */
+        font-style : italic;
+    }
+
+    .content  .content-item div.article {
+        text-align : justify;
+    }
+
+    .content  .content-item img.article-image {
+        float : left ;
+        padding : 0px 25px 25px 0px;
+        width : 16.107382550335570469798657718121%; /* Ideal: 96px -> 96 / 596 */
+    }
+}
+
+@media  screen and (max-width: 960px) {
+    
+    .layout-main {
+        margin : 0px 0px 0px 0px;
+        width : 100%;
+    }
+    
+    .layout-menu {
+        display : block;
+        height : auto;
+        min-height: 30%;
+        vertical-align : top;
+        width : 100%;
+    }
+
+    .en-tete {
+        height: 10%;
+    }
+
+    .en-tete h1 {
+        font-size: 1em;
+    }
+    
+     .layout-content {
+        display : block;
+        height : auto;
+        min-height : auto;
+        width : 100%;
+    }
+    
+    .menu ul {
+        display : none;
+    }
+    
+    .content  .content-item img.article-image {
+        display : none;
+    }
+    
+    .menu select {
+        display : inherit;
+        width : 96%;
+    }
+         
+}
